@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?zh9nss");
+  src: url("fonts/icomoon.eot?zh9nss#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?zh9nss") format("truetype"),
+    url("fonts/icomoon.woff?zh9nss") format("woff"),
+    url("fonts/icomoon.svg?zh9nss#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle:before {
+  content: "\e90c";
+  color: #0572ef;
+}
+.icon-sendfeedback:before {
+  content: "\e909";
+  color: #606060;
+}
+.icon-help:before {
+  content: "\e90a";
+  color: #606060;
+}
+.icon-chanel:before {
+  content: "\e90b";
+  color: #606060;
+}
+.icon-subscription:before {
+  content: "\e902";
+  color: #606060;
+}
+.icon-trending:before {
+  content: "\e903";
+  color: #606060;
+}
+.icon-watchlater:before {
+  content: "\e904";
+  color: #606060;
+}
+.icon-showmore:before {
+  content: "\e905";
+  color: #606060;
+}
+.icon-history:before {
+  content: "\e906";
+  color: #606060;
+}
+.icon-home:before {
+  content: "\e907";
+  color: #606060;
+}
+.icon-yourvideos:before {
+  content: "\e908";
+  color: #606060;
+}
+.icon-library:before {
+  content: "\e900";
+  color: #606060;
+}
+.icon-likedvideos:before {
+  content: "\e901";
+  color: #606060;
+}
+.icon-play:before {
+  content: "\e912";
+  color: #606060;
+}
+.icon-feed:before {
+  content: "\e91d";
+  color: #606060;
+}
+.icon-mic:before {
+  content: "\e91e";
+  color: #606060;
+}
+.icon-location:before {
+  content: "\e947";
+  color: #606060;
+}
+.icon-clock2:before {
+  content: "\e94f";
+  color: #606060;
+}
+.icon-undo2:before {
+  content: "\e967";
+  color: #606060;
+}
+.icon-spinner11:before {
+  content: "\e984";
+  color: #606060;
+}
+.icon-search:before {
+  content: "\e986";
+  color: #606060;
+}
+.icon-wrench:before {
+  content: "\e991";
+  color: #606060;
+}
+.icon-cog:before {
+  content: "\e994";
+  color: #606060;
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-pie-chart:before {
+  content: "\e99a";
+}
+.icon-trophy:before {
+  content: "\e99e";
+}
+.icon-airplane:before {
+  content: "\e9af";
+}
+.icon-flag:before {
+  content: "\e9cc";
+  color: #606060;
+}
+.icon-question:before {
+  content: "\ea09";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-volume-medium:before {
+  content: "\ea27";
+}
+.icon-volume-low:before {
+  content: "\ea28";
+}
+.icon-volume-mute:before {
+  content: "\ea29";
+}
+.icon-shuffle:before {
+  content: "\ea30";
+}
+.icon-ctrl:before {
+  content: "\ea50";
+}
