@@ -1,21 +1,24 @@
 /** @format */
 
-$accent_color:#ee4343;
-@mixin $icon_size {
+$accent_color: #ee4343;
+
+@mixin icon_size {
   width: 1.2em;
   height: 1.2em;
 }
 
-@function pxToEm ($size_px, $font_size){
+@function pxToEm($size_px, $font_size) {
   @return $size_px/$font_size + 0em;
 }
 
 #wrapper {
   display: grid;
-  grid-template-columns: 150px, 1fr;
+  grid-template-columns: 150px 1fr;
+  box-sizing: border-box;
+  padding-top: 56px;
+  min-height: 100vh;
 }
 div {
-  display: inline-block;
   font-size: 16px;
   font-family: Verdana, sans-serif;
 }
@@ -24,8 +27,13 @@ body {
   margin: 0;
   border: none;
   outline: none;
+  background-color: #f1f1f1;
 }
 #header-container {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  height: 56px;
   display: flex;
   flex-direction: row;
   padding: 0.5em, 0, 0.5em, 0;
@@ -110,34 +118,38 @@ body {
 }
 
 .side-menu {
-  width: 200px;
+  background: #fff;
 
   a {
-  display: inline-block;
-  text-decoration: none;
-  color: #606060;
-  padding: pxToEm(14; 20);
-  font-size: 15px;
-  width: 100%;
-  box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: #606060;
+    padding: pxToEm(14, 20);
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   &:hover {
-  color: $accent_color;
-  background: rgba(94, 94, 94, 0.459);
+    color: $accent_color;
+    background: rgba(94, 94, 94, 0.459);
+  }
 
   i {
-  display: inline-block;
-  @include: $icon_size;
-  text-align: center;
+    display: inline-block;
+    @include icon_size;
+    text-align: center;
+  }
 
   span {
-  margin-left: 15px;
-  text-align: left;
-   
-  &-channel {
-  display: inline-block;
-  text-decoration: none;
+    margin-left: 15px;
+    text-align: left;
+  }
 
+  &-channel {
+    display: inline-block;
+    text-decoration: none;
+  }
 }
 
 .side-headline {
@@ -145,8 +157,7 @@ body {
   padding-right: 5px;
   margin: 16px, 25px, 24px, 25px;
   display: inline-block;
-  width: $icon_size;
-  height: $icon_size;
+  @include icon_size;
   text-align: center;
   color: #606060;
   font-family: Verdana, sans-serif;
@@ -155,8 +166,7 @@ body {
 
 .icon-circle i {
   display: inline-block;
-  width: $icon_size;
-  height: $icon_size;
+  @include icon_size;
   text-align: center;
 }
 
@@ -194,4 +204,10 @@ body {
   margin-bottom: 1066px;
   color: #e5e5e5;
   font-size: 12px;
+}
+.cover-img {
+  height: 196px;
+  background: url(media.jpg);
+  background-size: cover;
+  background-position: center;
 }
