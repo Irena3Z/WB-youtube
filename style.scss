@@ -128,11 +128,10 @@ body {
     font-size: 15px;
     width: 100%;
     box-sizing: border-box;
-  }
-
-  &:hover {
-    color: $accent_color;
-    background: rgba(94, 94, 94, 0.459);
+    &:hover {
+      color: $accent_color;
+      background: rgba(94, 94, 94, 0.459);
+    }
   }
 
   i {
