@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow {
+  transform: rotate(90deg);
+}
 .icon-circle:before {
   content: "\e90c";
   color: #0572ef;

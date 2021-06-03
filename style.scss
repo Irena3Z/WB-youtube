@@ -13,13 +13,13 @@ $accent_color: #ee4343;
 
 #wrapper {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 230px 1fr;
   box-sizing: border-box;
   padding-top: 56px;
   min-height: 100vh;
 }
 div {
-  font-size: 16px;
+  font-size: 14px;
   font-family: Verdana, sans-serif;
 }
 body {
@@ -125,7 +125,7 @@ body {
     text-decoration: none;
     color: #606060;
     padding: pxToEm(14, 20);
-    font-size: 15px;
+    font-size: 14px;
     width: 100%;
     box-sizing: border-box;
     &:hover {
@@ -141,7 +141,7 @@ body {
   }
 
   span {
-    margin-left: 15px;
+    margin-left: 13px;
     text-align: left;
   }
 
@@ -160,7 +160,7 @@ body {
   text-align: center;
   color: #606060;
   font-family: Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .icon-circle i {
@@ -178,7 +178,7 @@ body {
   text-align: center;
   padding-left: 5px;
   font-family: Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 .privacy {
   font-size: 12px;
@@ -209,4 +209,35 @@ body {
   background: url(media.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.profile {
+  &__image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+}
+
+.user-account {
+  display: inline-block;
+  padding-top: 0;
+}
+.user-subscribers {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.accept-button {
+  background: #bc271a;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.profile-names {
+  text-decoration: none;
+  padding: 20px, 30px;
+  color: #606060;
 }
