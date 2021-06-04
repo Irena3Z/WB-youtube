@@ -7,13 +7,14 @@ $accent_color: #ee4343;
   height: 1.2em;
 }
 
-@function pxToEm($size_px, $font_size) {
+@function pxToEm($size_px, $font_size: 20) {
   @return $size_px/$font_size + 0em;
 }
 
 #wrapper {
+  font-size: 20px;
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: pxToEx(240) 1fr;
   box-sizing: border-box;
   padding-top: 56px;
   min-height: 100vh;
@@ -118,6 +119,7 @@ body {
 }
 
 .side-menu {
+  font-size: 20px;
   background: #fff;
 
   a {
@@ -125,7 +127,7 @@ body {
     text-decoration: none;
     color: #606060;
     padding: pxToEm(14, 20);
-    font-size: 14px;
+    font-size: pxToEm(14);
     width: 100%;
     box-sizing: border-box;
     &:hover {
@@ -245,14 +247,14 @@ body {
   justify-content: flex-end;
 }
 .plofile-options {
-   text-decoration: none;
+  text-decoration: none;
   padding: 20px 30px;
   color: #606060;
   &:hover {
     border-bottom: 3px solid #606060;
   }
 }
-}
+
 .profile-names {
   text-decoration: none;
   padding: 20px 30px;
@@ -266,10 +268,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 24px 69px;
+
   iframe {
     font-size: 20px;
-    width: pxToEm (424 );
-    height: pxToEm (238);
+    width: pxToEm(424);
+    height: pxToEm(238);
   }
   &__textblock {
     padding: 0 24px;
@@ -278,9 +281,11 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   #wrapper {
+    font-size: 16px;
     grid-template-columns: 1fr;
   }
   .side-menu {
+    font-size: 16px;
     display: none;
   }
 }
@@ -291,8 +296,8 @@ body {
   .preview {
     padding: 0 20px;
     font-size: 16px;
-  }
-  iframe{
-    font-size: 4.25vw;
+    iframe {
+      font-size: 4.25vw;
+    }
   }
 }
