@@ -6,11 +6,16 @@
 
 <header></header>
 <div id="header-container">
-    <div class="menu">
-        <svg class="home" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="#" onclick="document.querySelector('.side-menu').classList.toggle('visible')">
+        <svg col 
+        width="18" 
+        height="12" 
+        viewBox="0 0 18 12" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="#606060" />
         </svg>
-    </div>
+    </a>
 
     <div class="logo">
         <svg class="youtube-icon" width="78" height="18" viewBox="0 0 78 18" fill="none"
@@ -239,14 +244,16 @@
 <main>
     <div class="cover-img"></div>
     <div class="profile">
-        
-        <img class="profile__image" src="avatar.jpg" alt="Avatar">
-        <div>
-            <h2 class="user-account">Profile</h2>
-            <span class="user-subscribers"> 23.9 M subscribers</span>
+        <div class="profile__header">
+            <img class="profile__image" src="avatar.jpg" alt="Avatar">
+            <div>
+                <h2 class="user-account">Profile</h2>
+                <span class="user-subscribers"> 23.9 M subscribers</span>
+            </div>
+            <button class="accept-button">SUBSCRIBE</button>
         </div>
-        
-        <button class="accept-button">SUBSCRIBE</button>
+       
+       
         <nav class="plofile-options">
              <a class="profile-names" href=""> HOME</a>
               <a class="profile-names" href="">VIDEOS</a>
