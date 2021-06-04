@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <title>WB - youtube</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="icon-fonts.css" />
 
@@ -238,33 +239,37 @@
 <main>
     <div class="cover-img"></div>
     <div class="profile">
-        <nav>
-        <img class="profile__image" src="avatar.jpg" alt="Avatar">
-        <h2 class="user-account">Profile</h2>
-        <span class="user-subscribers"> 23.9 M subscribers</span>
-        <button class="accept-button">SUBSCRIBE</button>
-        <a class="profile-names" href=""> HOME</a>
-        <a class="profile-names" href="">VIDEOS</a>
-        <a class="profile-names" href="">PLAYLISTS</a>
-        <a class="profile-names" href="">COMMUNITY</a>
-        <a class="profile-names" href="">CHANNELS</a>
-        <a class="profile-names" href="">ABOUT</a>
-        <a href=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
-                    fill="#606060" />
-            </svg>
-        </a>
         
-        <a class="left" href=""><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.41 0L0 1.41L4.58 6L0 10.59L1.41 12L7.41 6L1.41 0Z" fill="#606060" />
-            </svg>
-        </a>
+        <img class="profile__image" src="avatar.jpg" alt="Avatar">
+        <div>
+            <h2 class="user-account">Profile</h2>
+            <span class="user-subscribers"> 23.9 M subscribers</span>
+        </div>
+        
+        <button class="accept-button">SUBSCRIBE</button>
+        <nav class="plofile-options">
+             <a class="profile-names" href=""> HOME</a>
+              <a class="profile-names" href="">VIDEOS</a>
+              <a class="profile-names" href="">PLAYLISTS</a>
+              <a class="profile-names" href="">COMMUNITY</a>
+              <a class="profile-names" href="">CHANNELS</a>
+              <a class="profile-names" href="">ABOUT</a>
+              <a href=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
+                        fill="#606060" />
+                </svg>
+            </a>
+            
+            <a class="left" href=""><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 0L0 1.41L4.58 6L0 10.59L1.41 12L7.41 6L1.41 0Z" fill="#606060" />
+                </svg>
+            </a>
         </nav>
     </div>
 
     <div class="preview">
-        <iframe width="424" height="238" src="https://www.youtube-nocookie.com/embed/JxzqfdDChZA?controls=0"
+        <iframe src="https://www.youtube-nocookie.com/embed/JxzqfdDChZA?controls=0"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
