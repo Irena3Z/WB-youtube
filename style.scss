@@ -1,5 +1,8 @@
 /** @format */
 
+@import url(icon-fonts.css);
+@import url(roboto-fonts.css);
+
 $accent_color: #ee4343;
 
 @mixin icon_size {
@@ -19,11 +22,38 @@ $accent_color: #ee4343;
   padding-top: 56px;
   min-height: 100vh;
 }
+
+#wrapper.visible-sidemenu {
+  font-size: 16px;
+  grid-template-columns: 70px 1fr;
+
+  .side-menu {
+    font-size: 14px;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    span {
+      font-size: 10px;
+    }
+    .side-headline {
+      font-size: 8px;
+    }
+    .side-headline-two {
+      font-size: 8px;
+    }
+    .preview__textblock {
+      font-size: 7px;
+    }
+  }
+}
+
 div {
   font-size: 15px;
-  font-family: Verdana, sans-serif;
 }
 body {
+  font-family: roboto, sans-serif;
   padding: 0px;
   margin: 0;
   border: none;
@@ -179,6 +209,7 @@ body {
   text-align: center;
   padding-left: 5px;
   font-family: Verdana, sans-serif;
+  font-size: 16px;
 }
 .privacy {
   font-size: 12px;
@@ -280,17 +311,46 @@ body {
 @media only screen and (max-width: 1000px) {
   #wrapper {
     font-size: 16px;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 70px 1fr;
 
     .side-menu {
-      font-size: 16px;
+      font-size: 14px;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      span {
+        font-size: 10px;
+      }
+      .side-headline {
+        font-size: 8px;
+      }
+      .side-headline-two {
+        font-size: 8px;
+      }
+      .preview__textblock {
+        font-size: 7px;
+      }
     }
   }
 
   #wrapper.visible-sidemenu {
     grid-template-columns: pxToEm(240) 1fr;
+    .side-menu {
+      font-size: 20px;
+
+      a {
+        display: inline-block;
+      }
+      span {
+        font-size: 1em;
+        margin-left: pxToEm(26);
+      }
+    }
   }
 }
+
 @media only screen and (max-width: 600px) {
   .profile {
     padding: 0 20px;
