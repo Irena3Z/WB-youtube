@@ -280,18 +280,15 @@ body {
 @media only screen and (max-width: 1000px) {
   #wrapper {
     font-size: 16px;
-    grid-template-columns: 1fr;
-  }
-  .side-menu {
-    font-size: 16px;
-    display: none;
+    grid-template-columns: 40px 1fr;
 
-    &.visible {
-      display: block;
-      position: fixed;
-      width: 240px;
-      min-height: 100vh;
+    .side-menu {
+      font-size: 16px;
     }
+  }
+
+  #wrapper.visible-sidemenu {
+    grid-template-columns: pxToEm(240) 1fr;
   }
 }
 @media only screen and (max-width: 600px) {
